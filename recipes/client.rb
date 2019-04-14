@@ -42,7 +42,7 @@ else
   Chef::Log.info('No chrony master(s) found, using node[:chrony][:servers] attribute.')
 end
 
-template '/etc/chrony/chrony.conf' do
+template '/etc/chrony.conf' do
   owner 'root'
   group 'root'
   mode '0644'
